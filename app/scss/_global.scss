@@ -16,7 +16,8 @@ html{
   border: 0;
 }
 
-:focus,:active{outline:none}
+button:focus,:active{outline:none;}
+input:focus,:active{outline:none;}
 a:focus, a:active{outline: none;}
 
 nav,footer,header,aside{display: block;}
@@ -35,7 +36,7 @@ input,button,textarea{font-family: inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
+a, a:visited{text-decoration: none; color:inherit;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
@@ -45,7 +46,37 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
 
+body{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $text;
+  overflow-x: hidden;
+}
 
-body{overflow-x: hidden;}
+a{
+  display: inline-block;
+}
 
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.container__fluid{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0px 175px;
+}
+@media (max-width: 720px){
+  .container__fluid{
+    padding: 0px 15px;
+  }
+}
+
+.header{
+  background-color: #eef1f3;
+}
 
